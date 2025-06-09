@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inocreative Ebook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f0f8ff 25%, #ffffff 75%);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .fade-in { animation: fadeIn 1s ease-out;}
+        .number-badge {
+            position: absolute; top: 8px; left: 8px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 50%; width: 25px; height: 25px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 12px; color: rgba(0, 0, 0, 0.8); font-weight: bold;
+            z-index: 10; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .ebook-container { position: relative;}
+        .fade-in-image { opacity: 0; animation: fadeIn 1s ease-out forwards;}
+        .ebook-card { position: relative; z-index: 1;}
+        .bg-light-blue { background-color: #add8e6;}
+        .bg-light-blue-dark:hover { background-color: #87ceeb;}
+        .light-blue-button {
+            background-color: #add8e6; color: white;
+            padding: 0.25rem 0.75rem; border-radius: 9999px;
+            text-align: center; display: inline-block;
+            transition: background 0.3s; font-size: 0.875rem;
+        }
+        .light-blue-button:hover { background-color: #87ceeb;}
+    </style>
+</head>
+<body class="p-4 fade-in">
+  <nav class="bg-light-blue p-2 rounded-lg mb-3 flex items-center justify-center">
+    <div class="text-4xl mb-0">📚</div>
+    <h1 class="text-white font-semibold text-xl ml-2">Inocreative Ebook</h1>
+    </nav>
+
+    <section class="max-w-md mx-auto">
+        <!-- Selamat Datang -->
+        <div class="text-center mb-20 fade-in bg-light-blue rounded-xl px-2 py-2 relative" style="animation-delay: 0.1s;">
+            <p class="text-white text-sm leading-relaxed mt-0 max-w-md mx-auto">
+                Temukan berbagai ebook gratis dan premium untuk pengembangan diri, inspirasi, dan wawasan baru.
+          <p
+          </div>
+            <!-- Subjudul di kiri bawah -->
+            <div class="absolute left-0 right-0 mx-auto bottom-0 ml-4 mb-[-60px]">
+                <span class="bg-light-blue-dark text-black subtitle font-semibold px-4 py-1 rounded-full shadow">
+                    Self Improvement & Motivasi
+                </span>
+            </div>
+        </div>
+
+<!-- Daftar Ebook Gratis -->
+<div class="space-y-4">
+  <!-- Baris 1 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 1 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">1</div>
+        <img src="https://i.imghippo.com/files/RZe6149sQ.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Bicara Itu Ada Seni Nya</p>
+        <a href="https://drive.google.com/file/d/1FGnh7Srg_tEeth9L8ctlypqDcJZvzJjq/view?usp=drivesdk" target="_blank" class="mt-7 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 2 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">2</div>
+        <img src="https://i.imghippo.com/files/fL7398ovY.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Membaca Pikiran, Karakter & Kepribadian</p>
+        <a href="https://drive.google.com/file/d/13v7PVfygPWGlsbdwve2olJAR6JQ2KZ63/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 2 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 3 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">3</div>
+        <img src="https://i.imghippo.com/files/IpME1457BM.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Atomic Habits</p>
+        <a href="https://drive.google.com/file/d/1tQfqkkqCyJQcW77z8r53gjRzmMKvGO0z/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 4 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">4</div>
+        <img src="https://i.imghippo.com/files/zY9310VEg.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Berani Tidak Disukai</p>
+        <a href="https://drive.google.com/file/d/1gi4QdtBW4HQK1_-z5O1ofkhvnxJM0mht/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 3 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 5 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">5</div>
+        <img src="https://i.imghippo.com/files/hgTC6300hF.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Memikat & Memengaruhi Lawan Bicara</p>
+        <a href="https://drive.google.com/file/d/1aIyjQIgKBf4EqY3LYJvEafxeczih2jyp/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 6 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">6</div>
+        <img src="https://imagizer.imageshack.com/img923/1008/RSXUKE.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Brain Power</p>
+        <a href="https://drive.google.com/file/d/10Lm5FAX5HdP5JvDeqldV3zX0OoFimB7d/view?usp=drive_link" target="_blank" class="mt-12 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 4 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 7 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">7</div>
+        <img src="https://i.imghippo.com/files/HrYN7515mkk.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Aku Yang Lebih Kuat Dari Kemarin</p>
+        <a href="https://drive.google.com/file/d/10QaNLU1x-dbdzBE81SwmBN5bYnXj3CxJ/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 8 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">8</div>
+        <img src="https://imagizer.imageshack.com/img923/8656/eDXkO2.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Bersamai Dengan Kecemasan</p>
+        <a href="https://drive.google.com/file/d/1bnPcPxXJj7gErScnonqpybPIVHKWQPdq/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 5 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 9 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">9</div>
+        <img src="https://imagizer.imageshack.com/img923/3841/N3iXnn.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">A Man Called Ove</p>
+        <a href="https://drive.google.com/file/d/1sCcAzWA1kVUJK72_a1ZFPe57yw_Kr3X3/view?usp=drive_link" target="_blank" class="mt-7 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 10 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">10</div>
+        <img src="https://imagizer.imageshack.com/img923/504/OEQZ68.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Aku Yang Sudah Lama Hilang</p>
+        <a href="https://drive.google.com/file/d/1NsJQ2aJCkWhBQ0Cl4h1gWKXB-a9pwfog/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 6 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 11 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">11</div>
+        <img src="https://imagizer.imageshack.com/img924/1306/xaGPCo.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Berdamai Dengan Rasa Marah</p>
+        <a href="https://drive.google.com/file/d/1uipsD0Cc8Nw6J6j8-hfIvniWsXnKfZGq/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 12 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">12</div>
+        <img src="https://imagizer.imageshack.com/img924/6885/0Rrj4l.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Filosofi Teras</p>
+        <a href="https://drive.google.com/file/d/1l4hZ2nF1yGxmmnD0WT1JgKzY4MeFqyYc/view?usp=drive_link" target="_blank" class="mt-7 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 7 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 13 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">13</div>
+        <img src="https://imagizer.imageshack.com/img923/5403/F5ktD2.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Hal-Hal Yang Membuat Sebagian Orang Berhasil, Sementara Yang Lainnya Gagal</p>
+        <a href="https://drive.google.com/file/d/1h4EZDUN9lnNP_pCuBQ2wx4LrqfU6A3zM/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 14 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">14</div>
+        <img src="https://i.imghippo.com/files/pJXJ2615MM.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Is It Bad Or Good Habits</p>
+        <a href="https://drive.google.com/file/d/1aCb-X0EZkSqq7oKw3_5HewD7a_ToSpFJ/view?usp=drive_link" target="_blank" class="mt-[68px] light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 8 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 15 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">15</div>
+        <img src="https://imagizer.imageshack.com/img924/3443/zrVPLp.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">7 Langkah Nyulap Bisnis Jadi Lebih Baik</p>
+        <a href="https://drive.google.com/file/d/1o9sgkgWRPuJF4B_84tjeh5QTzDLG6QJO/view?usp=drive_link" target="_blank" class="mt-7 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 16 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">16</div>
+        <img src="https://imagizer.imageshack.com/img923/1679/Mne50R.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Jangan Membuat Masalah Kecil Jadi Masalah Besar</p>
+        <a href="https://drive.google.com/file/d/1todAE7s-YoBQ-7WRh1k74gaOYaHQdv7T/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 9 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 17 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">17</div>
+        <img src="https://imagizer.imageshack.com/img923/4927/DcWWR3.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Kitab Anti Bodoh</p>
+        <a href="https://drive.google.com/file/d/1MAyVNK9Dwh-IRPzxxZ0fb1Rp_NFdJKrZ/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 18 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">18</div>
+        <img src="https://imagizer.imageshack.com/img923/1318/6esLSJ.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Mindset</p>
+        <a href="https://drive.google.com/file/d/16UrE4HWfVrDNN6-BkDqEVlkHSkq7Tp-u/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 10 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 19 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">19</div>
+        <img src="https://imagizer.imageshack.com/img924/24/DBqtoB.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Obat Marah Dosis Tinggi</p>
+        <a href="https://drive.google.com/file/d/1obIXdAMq0IdPg3Sj5H4-dVCE2KdQTyY6/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 20 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">20</div>
+        <img src="https://imagizer.imageshack.com/img923/3005/niDutj.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Teruslah Bodoh Jangan Pintar</p>
+        <a href="https://drive.google.com/file/d/14_20Y0Q1UB4vFpZXc4A16jVQoTKSRIBC/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 11 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 21 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">21</div>
+        <img src="https://imagizer.imageshack.com/img924/9830/7MhWOj.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">The Psychology Of Money</p>
+        <a href="https://drive.google.com/file/d/11_IJaYNHXYVTvPpimCyHrvJy1xSlZJpQ/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 22 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">22</div>
+        <img src="https://imagizer.imageshack.com/img923/6479/bEr6e5.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Seni Hidup Minimalis</p>
+        <a href="https://drive.google.com/file/d/13vIHq7fOely9gb-OnTX7Y6kdA6wPQhHZ/view?usp=drive_link" target="_blank" class="mt-7 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+  <!-- Baris 12 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 23 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">23</div>
+        <img src="https://imagizer.imageshack.com/img923/5512/iThWy5.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Seni Membaca Pikiran Orang Lain</p>
+        <a href="https://drive.google.com/file/d/1PHasK2NIACphlL-KUcr5FyTRsmWQqWVt/view?usp=drive_link" target="_blank" class="mt-2 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 24 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">24</div>
+        <img src="https://imagizer.imageshack.com/img923/9884/S3LxaC.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Self Leadership</p>
+        <a href="https://drive.google.com/file/d/1ctIrasX7JINAuXqZAEIJhAcc5iGza7wt/view?usp=drive_link" target="_blank" class="mt-7 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bagian Novel -->
+<div class="text-center mt-10 mb-6">
+  <span class="bg-light-blue-dark text-black subtitle font-semibold px-4 py-1 rounded-full shadow">
+    Novel
+  </span>
+</div>
+<!-- Daftar Novel -->
+<div class="space-y-4">
+  <!-- Baris 1 -->
+  <div class="flex space-x-4">
+    <!-- Ebook 1 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">1</div>
+        <img src="https://imagizer.imageshack.com/img923/2192/dJtSZD.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+      <div class="p-3 flex flex-col items-center">
+        <p class="text-sm text-gray-600">Dunia Shopie</p>
+        <a href="https://drive.google.com/file/d/1C4Cqjx-kiqA20leVvqmjlTLstntHsjnR/view?usp=drive_link" target="_blank" class="mt-7 light-blue-button">Baca Sekarang</a>
+      </div>
+    </div>
+    <!-- Ebook 2 -->
+    <div class="flex-1 ebook-card rounded-lg overflow-hidden shadow-lg bg-white">
+      <div class="ebook-container">
+        <div class="number-badge">2</div>
+        <img src="https://imagizer.imageshack.com/img923/3157/FkdYy8.png" class="w-full h-auto object-cover fade-in-image" />
+      </div>
+   
